@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
     background-color: #bae7ff;
 }
@@ -50,4 +52,18 @@ td {
     border-style: dashed;
     text-align: center;
     font: 15px Arial, sans-serif;
+}
+
+.login {
+    margin: auto;
+    width: 40%;
+    padding: 100px;
+    text-align: center;
+}
+
+#game-note {
+    margin-top: 50px;
+    padding: 20px;
+    border-color: white;
+    border-style: solid;
 }

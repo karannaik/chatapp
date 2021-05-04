@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {Card, Input, Typography, Avatar} from "antd";
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
-import 'antd/dist/antd.css';
 import '../../index.css';
 
 const { Meta } = Card;

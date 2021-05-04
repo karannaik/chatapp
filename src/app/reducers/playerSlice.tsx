@@ -1,11 +1,13 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 interface PlayerState {
-    id: number
+    id: number,
+    name: string
 }
 
 const initialState: PlayerState = {
-    id: 33
+    id: 1,
+    name: "NoName"
 };
 
 export const playerSlice = createSlice({
@@ -13,9 +15,12 @@ export const playerSlice = createSlice({
     initialState,
     reducers: {
         updatePlayerId: (state,
-                         action) => state.id = action.payload
+                         action) => state.id = action.payload,
+        updatePlayerName: (state,
+                           action) => state.name = action.payload
+
     }
 });
 
-export const { updatePlayerId } = playerSlice.actions;
+export const { updatePlayerId, updatePlayerName } = playerSlice.actions;
 export default playerSlice.reducer;

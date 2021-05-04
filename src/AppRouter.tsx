@@ -8,6 +8,7 @@ import {TicTacToeTable} from "./components/tictactoe/TicTacToeTable";
 import PageNotFound from "./components/PageNotFound";
 import ChatApp from "./components/chatapp/ChatApp";
 import Home from "./components/Home";
+import Login from "./components/tictactoe/Login";
 
 export default function AppRouter() {
 
@@ -17,7 +18,7 @@ export default function AppRouter() {
                 <Switch>
                     <Route path={"/home"} component={Home}/>
                     <Route path={"/chatapp"} component={ChatApp}/>
-                    <Route path={"/tictactoe"} component={TicTacToeTable}/>
+                    <Route path={"/tictactoe"} component={Login}/>
                     <Route component={PageNotFound}/>
                 </Switch>
             </div>
