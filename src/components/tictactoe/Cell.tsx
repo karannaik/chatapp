@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
-import {updateCell} from "../app/reducers/gameSlice";
-import {useAppSelector} from "../app/hooks";
+import {updateCell} from "../../app/reducers/gameSlice";
+import {useAppSelector} from "../../app/hooks";
 
 interface Props {
     value: number,

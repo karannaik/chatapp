@@ -1,14 +1,10 @@
 import React from 'react';
-import { updateCell } from '../app/reducers/gameSlice';
-import {useAppDispatch, useAppSelector} from "../app/hooks";
+import {useAppSelector} from "../../app/hooks";
 import {Cell} from "./Cell";
 
 export const TicTacToeTable: React.FC = () => {
 
     const cellsFromRedux = useAppSelector((state) => { return state.game.value });
-
-
-    const dispatch = useAppDispatch();
 
     const totalRows = 3;
     const totalCols = 3;

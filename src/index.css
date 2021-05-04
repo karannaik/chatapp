@@ -38,3 +38,16 @@ td {
     border-style: solid;
     border-color: white;
 }
+
+.home {
+    padding: 50px;
+    border-style: solid;
+}
+
+.link-primary {
+    margin: 100px;
+    padding: 5px;
+    border-style: dashed;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+}
