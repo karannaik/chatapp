@@ -12,11 +12,19 @@
   "author": "karan naik",
   "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "@types/react-redux": "^7.1.16",
     "antd": "^4.15.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
     "react-scripts": "^4.0.3",
+    "react-table": "^7.7.0",
+    "typescript": "4.2.4",
     "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.5"
   },
   "browserslist": {
     "production": [

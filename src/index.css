@@ -22,3 +22,19 @@ body {
     left: 0;
     bottom: 0;
 }
+
+.ticTacToe {
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    height: 500px;
+    margin: 50px;
+}
+
+td {
+    padding: 60px;
+    max-width: 60px;
+    border-style: solid;
+    border-color: white;
+}
