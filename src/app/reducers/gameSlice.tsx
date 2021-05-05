@@ -6,7 +6,7 @@ interface GameState {
 
 const initialState: GameState = {
     value: [
-        0,1,2,
+        0,0,0,
         0,0,0,
         0,0,0
     ]

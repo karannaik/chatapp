@@ -1,26 +1,45 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 interface PlayerState {
-    id: number,
-    name: string
+    playerId: string,
+    playerName: string,
+    roomName: string
 }
 
 const initialState: PlayerState = {
-    id: 1,
-    name: "NoName"
+    playerId: "1",
+    playerName: "NoName",
+    roomName: ""
 };
 
 export const playerSlice = createSlice({
     name: 'player',
     initialState,
     reducers: {
-        updatePlayerId: (state,
-                         action) => state.id = action.payload,
-        updatePlayerName: (state,
-                           action) => state.name = action.payload
+        updatePlayerId: (state:PlayerState,
+                         action) => {
+            return {
+                ...state,
+                playerId: action.payload
+            }
+        },
+        updatePlayerName: (state:PlayerState,
+                           action) => {
+            return {
+                ...state,
+                playerName: action.payload
+            }
+        },
+        updateRoomName: (state:PlayerState,
+                           action) => {
+            return {
+                ...state,
+                roomName: action.payload
+            }
+        }
 
     }
 });
 
-export const { updatePlayerId, updatePlayerName } = playerSlice.actions;
+export const { updatePlayerId, updatePlayerName, updateRoomName } = playerSlice.actions;
 export default playerSlice.reducer;

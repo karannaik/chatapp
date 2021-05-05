@@ -18,7 +18,8 @@ export default function AppRouter() {
                 <Switch>
                     <Route path={"/home"} component={Home}/>
                     <Route path={"/chatapp"} component={ChatApp}/>
-                    <Route path={"/tictactoe"} component={Login}/>
+                    <Route path={"/login"} component={Login}/>
+                    <Route path={"/tictactoe"} component={TicTacToeTable}/>
                     <Route component={PageNotFound}/>
                 </Switch>
             </div>

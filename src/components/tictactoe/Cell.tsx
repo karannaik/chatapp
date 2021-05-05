@@ -1,23 +1,24 @@
-import React, {useState} from 'react';
-import {useDispatch} from "react-redux";
-import {updateCell} from "../../app/reducers/gameSlice";
-import {useAppSelector} from "../../app/hooks";
+import React from 'react';
+import xLogo from '../../icons/x_logo.png';
+import oLogo from '../../icons/o_logo.png';
 
 interface Props {
     value: number,
-    index: number
+    index: number,
+    onClick: (cellId: number) => void
 }
 
 export const Cell : React.FC<Props> = (props:Props) => {
 
-    const playerId = useAppSelector(state => {return state.player.id});
-    const dispatch = useDispatch();
+    const logo = props.value == 0 ? undefined : (props.value == 1 ? xLogo : oLogo);
 
     return (
         <div>
-            <button onClick={() => dispatch(updateCell({index: props.index, playerId}))}>
-                {props.value}
-            </button>
+            <img src={logo}
+                 width={"100px"}
+                 height={"100px"}
+                 onClick={() => props.onClick(props.index)}
+            />
         </div>
     );
 };
